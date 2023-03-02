@@ -14,9 +14,11 @@ class DailyCell extends Component {
     return (
       <td className="cal-daily-cell">
         <header className={`cal-daily-cell--top ${isCurrentDay}`}>
-          <p className='cal-daily-cell--top-day'>{this.props.day.format('D')}</p>
+          <p className="cal-daily-cell--top-day">
+            {this.props.day.format('D')}
+          </p>
         </header>
-        <div className="cal-daily-cell--body">Body</div>
+        <div className="cal-daily-cell--body"></div>
       </td>
     );
   }
